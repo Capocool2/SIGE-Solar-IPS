@@ -35,7 +35,7 @@ CUSTOM_CSS = """
 /* Importación de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap');
 
-/* Variables CSS Globales */
+/* Variables CSS - Tema Claro (predeterminado) */
 :root {
     --primary-deep: #10375C;
     --primary-blue: #1E88E5;
@@ -52,6 +52,47 @@ CUSTOM_CSS = """
     --shadow-soft: 0 4px 20px -2px rgba(16, 55, 92, 0.08);
     --shadow-hover: 0 8px 30px rgba(16, 55, 92, 0.14);
 }
+
+/* Variables CSS - Modo Oscuro (activado desde ☰ → Settings → Theme → Dark) */
+[data-theme="dark"] {
+    --primary-deep: #90CAF9;
+    --primary-blue: #64B5F6;
+    --primary-light: #1E3A5F;
+    --solar-amber: #FFB74D;
+    --solar-amber-light: #3E2A10;
+    --green-eco: #66BB6A;
+    --green-light: #1B3A1E;
+    --bg-main: #0F1117;
+    --card-bg: #1E2130;
+    --text-primary: #F1F5F9;
+    --text-secondary: #94A3B8;
+    --border-color: #2D3748;
+    --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Sobrescrituras para Dark Mode en elementos Streamlit */
+[data-theme="dark"] .kpi-card {
+    background: #1E2130 !important;
+    border-color: #2D3748 !important;
+}
+[data-theme="dark"] .kpi-icon-blue { background: #1E3A5F !important; }
+[data-theme="dark"] .kpi-icon-amber { background: #3E2A10 !important; }
+[data-theme="dark"] .kpi-icon-green { background: #1B3A1E !important; }
+[data-theme="dark"] .kpi-icon-deep  { background: #263040 !important; }
+[data-theme="dark"] .kpi-label { color: #94A3B8 !important; }
+[data-theme="dark"] .kpi-value { color: #F1F5F9 !important; }
+[data-theme="dark"] .kpi-delta-neutral { background: #263040 !important; color: #94A3B8 !important; }
+[data-theme="dark"] .kpi-delta-green   { background: #1B3A1E !important; color: #86EFAC !important; }
+[data-theme="dark"] .kpi-delta-amber   { background: #3E2A10 !important; color: #FCD34D !important; }
+[data-theme="dark"] .content-card { background: #1E2130 !important; border-color: #2D3748 !important; }
+[data-theme="dark"] .card-title { color: #90CAF9 !important; }
+[data-theme="dark"] .card-subtitle { color: #94A3B8 !important; }
+[data-theme="dark"] .alert-danger  { background: #2D1717 !important; border-color: #7F1D1D !important; color: #FCA5A5 !important; }
+[data-theme="dark"] .alert-warning { background: #2D2210 !important; border-color: #78350F !important; color: #FCD34D !important; }
+[data-theme="dark"] .alert-success { background: #14261B !important; border-color: #166534 !important; color: #86EFAC !important; }
+[data-theme="dark"] .stTabs [data-baseweb="tab-list"] { background-color: #1A1F2E !important; }
+[data-theme="dark"] .stTabs [aria-selected="true"]     { background-color: #1E2130 !important; color: #90CAF9 !important; }
 
 /* Tipografía base */
 html, body, [class*="css"] {

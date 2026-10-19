@@ -1,0 +1,12 @@
+[theme]
+# Tema por defecto: Light (fondo blanco clínico)
+# El usuario puede cambiar a Dark Mode desde: ☰ → Settings → Theme → Dark
+base                     = "light"
+primaryColor             = "#1E88E5"
+backgroundColor          = "#FFFFFF"
+secondaryBackgroundColor = "#F1F5F9"
+textColor                = "#0F172A"
+font                     = "sans serif"
+
+[browser]
+gatherUsageStats = false
