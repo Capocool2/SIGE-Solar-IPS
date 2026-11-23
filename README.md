@@ -12,7 +12,7 @@
 1. **📊 Pasos 1 y 2: Caracterización & Pareto:** Análisis de la demanda mensual histórica (Enero - Noviembre 2018), proyección fiscal de Diciembre mediante Regresión Lineal ML, curva de Pareto (80/20) para las Top 12 IPS de mayor demanda y Treemap interactivo por tipología (*Hospital*, *CAMINO*, *PASO*).
 2. **⚡ Paso 3: Perfil de Carga (kW):** Modelado horario de 00:00 a 24:00 horas calibrado matemáticamente según tipología clínica (24/7 con picos térmicos diurnos en Barranquilla vs. ambulatorio PASO), factor de carga, hora crítica, valoración del cargo por potencia regulada y simulación de *Peak Shaving* con energía solar.
 3. **📉 Paso 4: Línea Base Energética:** Definición de la línea base histórica frente a metas de eficiencia operativa (-15%), integración con metas de autogeneración solar FV, comparativas ejecutivas de demanda y presupuesto, y matriz de ahorro desagregada por IPS.
-4. **☀️ Paso 7: Simulación Solar & Finanzas:** Dimensionamiento técnico de sistemas solares fotovoltaicos adaptados al recurso solar de Barranquilla ($\text{HSP} = 5.2\text{ h/día}$, $PR = 78\%$), cálculo de CAPEX, ahorros en facturación valorados dinámicamente con el precio del kWh configurado, payback, flujo de caja a 25 años con incentivos de la **Ley 1715 / 2099 de Colombia** y matriz descargable en CSV para las 55 sedes.
+4. **☀️ Paso 5: Simulación Solar & Finanzas:** Dimensionamiento técnico de sistemas solares fotovoltaicos adaptados al recurso solar de Barranquilla ($\text{HSP} = 5.2\text{ h/día}$, $PR = 78\%$), cálculo de CAPEX, ahorros en facturación valorados dinámicamente con el precio del kWh configurado, payback, flujo de caja a 25 años con incentivos de la **Ley 1715 / 2099 de Colombia** y matriz descargable en CSV para las 55 sedes.
 
 ---
 

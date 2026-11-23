@@ -721,7 +721,7 @@ tab1, tab2, tab3, tab4 = st.tabs([
     "📊 Pasos 1 y 2: Caracterización & Pareto",
     "⚡ Paso 3: Perfil de Carga (kW)",
     "📉 Paso 4: Línea Base Energética",
-    "☀️ Paso 7: Simulación Solar & Finanzas"
+    "☀️ Paso 5: Simulación Solar & Finanzas"
 ])
 
 
@@ -1420,7 +1420,7 @@ with tab3:
 # ======================================================================================
 with tab4:
     st.markdown("""
-        <div class="card-title">☀️ Paso 7: Simulador Solar Fotovoltaico y Evaluación Financiera de Inversión</div>
+        <div class="card-title">☀️ Paso 5: Simulador Solar Fotovoltaico y Evaluación Financiera de Inversión</div>
         <div class="card-subtitle">
             Dimensionamiento técnico de sistemas de autogeneración solar fotovoltaica conectada a red (SFV),
             cálculo de CAPEX, ahorros en facturación valorados a <strong>${precio_kwh_activo:,.1f} COP/kWh</strong>, payback y flujo de caja a 25 años con incentivos de la Ley 1715 / 2099.
